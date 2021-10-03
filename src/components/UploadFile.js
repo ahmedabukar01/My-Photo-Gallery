@@ -2,9 +2,15 @@ import React from 'react'
 
 export const UploadFile = () => {
     return (
-        <div>
-            <h1>Hi I'm the warrior, the programmer, the king, the genious him self</h1>
-        </div>
+        <form className="upload-file container">
+            <div className="fields">
+                <input type="file" id="file" />
+                <label for="file">
+                    <i className="fas fa-upload"></i>
+                    Upload Photo
+                </label>
+            </div>
+        </form>
     )
 }
 
