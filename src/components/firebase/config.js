@@ -23,4 +23,4 @@ firebase.initializeApp(firebaseConfig);
 const myStorage = firebase.storage();
 const myFirestore = firebase.firestore();
 
-export {myFirestore,myStorage}
+export { myFirestore,myStorage }
