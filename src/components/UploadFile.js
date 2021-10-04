@@ -13,7 +13,7 @@ export const UploadFile = () => {
             setError(null)
             
         } else{
-            setError('please Selected valid image such as (png or jpeg');
+            setError('please Selected valid image such as (png or jpeg)');
             setFile(null);
         }
         
@@ -25,8 +25,8 @@ export const UploadFile = () => {
                 <input type="file" id="file" onChange={onChange}/>
                 <label htmlFor="file">
                     <i className="fas fa-upload"></i>
-                    {file? file.name : 'Upload Photo'}
-                    {error && (<div>{error}</div>)}
+                    {file? <div className="file-name">{file.name}</div> : 'Upload Photo'}
+                    {error && (<div className="error">{error}</div>)}
                 </label>
             </div>
         </form>
