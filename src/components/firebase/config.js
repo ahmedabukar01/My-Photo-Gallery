@@ -1,6 +1,6 @@
 import firebase from 'firebase/compat/app'
-import 'firebase/firestore'
-import 'firebase/storage'
+import 'firebase/compat/firestore'
+import 'firebase/compat/storage'
 
 // // Import the functions you need from the SDKs you need
 // import { initializeApp } from "firebase/app";
@@ -22,5 +22,5 @@ firebase.initializeApp(firebaseConfig);
 
 const myStorage = firebase.storage();
 const myFirestore = firebase.firestore();
-
+console.log(myStorage)
 export { myFirestore,myStorage }
