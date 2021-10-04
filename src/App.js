@@ -1,5 +1,6 @@
 import './App.css';
 import Header from './components/Header';
+import ProgressBar from './components/ProgressBar';
 import UploadFile from './components/UploadFile'
 
 function App() {
