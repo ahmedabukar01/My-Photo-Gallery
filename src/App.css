@@ -18,11 +18,13 @@ body{
   margin:0 auto;
   padding:0 60px;
 }
+.header-wrap{
+  background:#060a7a;
+}
 .header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background:#060a7a;
   height: 70px;
 }
 .title{
@@ -67,4 +69,28 @@ body{
 .progress{
   background:chartreuse;
   border-radius: 5px;
+}
+
+/* images */
+.image-grid{
+  display: grid;
+  margin:20px auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+.wrap-image{
+  overflow: hidden;
+  height: 0;
+  padding:50% 0;
+  border:2px solid #fff;
+  border-radius: 5px;
+  position: relative;
+}
+.wrap-image img{
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 150%;
+  position: absolute;
+  top:0;
+  left:0;
 }

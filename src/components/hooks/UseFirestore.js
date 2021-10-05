@@ -5,7 +5,8 @@ const UseFirestore = (collection)=>{
     const [docs,setDocs] = useState(null)
     console.log('hi')
     useEffect(()=>{
-        myFirestore.collection(collection).onSnapshot((snap)=>{
+        myFirestore.collection(collection).orderBy('createdAt','desc')
+        .onSnapshot((snap)=>{
             const documents = [];
             snap.docs.forEach(snap=>{
                 documents.push({...snap.data(),id:snap.id});
