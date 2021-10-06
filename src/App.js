@@ -10,7 +10,6 @@ function App() {
       <Header />
       <UploadFile />
       <ImageGrid />
-      <Models />
     </div>
   );
 }
